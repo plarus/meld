@@ -51,8 +51,9 @@ class MeldNotebook(Gtk.Notebook):
           bind "<Alt>9" { "tab-switch" (8) };
           bind "<Alt>0" { "tab-switch" (9) };
         }
-        notebook.meld-notebook { -gtk-key-bindings: TabSwitchBindings; }
-        """
+        MeldNotebook { """ +
+        (b"" if Gtk.get_minor_version() <= 18 else b"-") +
+        b"gtk-key-bindings: TabSwitchBindings; }"
     )
 
     ui = """

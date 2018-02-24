@@ -18,7 +18,7 @@ Requirements
 
 * Python 3.4
 * pycairo (Python3 bindings for cairo without GObject layer)
-* PyGObject 3.20 (Python3 bindings for GObject introspection)
+* PyGObject 3.18 (Python3 bindings for GObject introspection)
 * gsettings-desktop-schemas
 
 And following packages with GObject introspection:
@@ -26,8 +26,8 @@ And following packages with GObject introspection:
 * GLib 2.36 (meld install also needs GLib binaries like glib-compile-schemas)
 * Pango
 * PangoCairo
-* GTK+ 3.20
-* GtkSourceView 3.20
+* GTK+ 3.18
+* GtkSourceView 3.18
 
 
 Build requirements

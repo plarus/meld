@@ -132,9 +132,11 @@ class LinkMap(Gtk.DrawingArea):
             Gdk.cairo_set_source_rgba(context, self.line_colors[c[0]])
             context.stroke()
 
-
-LinkMap.set_css_name("link-map")
-
+try:
+    LinkMap.set_css_name("link-map")
+except AttributeError:
+    # New API in 3.20
+    pass
 
 class ScrollLinkMap(Gtk.DrawingArea):
 
